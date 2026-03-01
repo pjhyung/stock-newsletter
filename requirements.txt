@@ -1,0 +1,22 @@
+# News fetching (100% free, no API key needed)
+feedparser==6.0.11
+requests==2.31.0
+
+# AI summarization (Gemini 1.5 Flash - free tier)
+google-generativeai==0.8.3
+
+# Slack integration (free with any Slack workspace)
+slack-sdk==3.27.1
+
+# HTML templating
+Jinja2==3.1.4
+
+# Environment variables
+python-dotenv==1.0.1
+
+# Local scheduling (optional, for --schedule flag)
+schedule==1.2.2
+
+# Testing
+pytest==8.2.0
+pytest-mock==3.14.0
