@@ -15,7 +15,14 @@ load_dotenv()
 logger = logging.getLogger(__name__)
 
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
-MODEL_NAME = "gemini-flash-lite-latest"
+
+# 429(한도 초과) 시 순서대로 다음 모델로 폴백
+FALLBACK_MODELS = [
+    "gemini-flash-lite-latest",
+    "gemini-2.5-flash-lite",
+    "gemini-flash-latest",
+    "gemini-2.5-flash",
+]
 
 
 @dataclass
@@ -124,27 +131,36 @@ def generate_insights(articles: list[dict]) -> InsightResult:
             investment_insight="[설정 오류] .env 파일에 GEMINI_API_KEY를 입력해주세요. (https://aistudio.google.com/app/apikey)",
         )
 
-    try:
-        genai.configure(api_key=GEMINI_API_KEY)
-        model = genai.GenerativeModel(MODEL_NAME)
+    genai.configure(api_key=GEMINI_API_KEY)
+    prompt = build_prompt(articles)
 
-        prompt = build_prompt(articles)
-        logger.info(f"Sending {len(articles)} articles to Gemini ({MODEL_NAME})...")
+    for model_name in FALLBACK_MODELS:
+        try:
+            logger.info(f"Trying model: {model_name} ...")
+            model = genai.GenerativeModel(model_name)
+            response = model.generate_content(prompt)
+            raw_text = response.text
+            logger.info(f"Gemini response received from [{model_name}] ({len(raw_text)} chars)")
 
-        response = model.generate_content(prompt)
-        raw_text = response.text
-        logger.info(f"Gemini response received ({len(raw_text)} chars)")
+            result = _parse_response(raw_text)
+            logger.info(f"Parsed {len(result.summary_points)} summary points")
+            return result
 
-        result = _parse_response(raw_text)
-        logger.info(f"Parsed {len(result.summary_points)} summary points")
-        return result
+        except Exception as e:
+            err_str = str(e)
+            if "429" in err_str or "quota" in err_str.lower():
+                logger.warning(f"[{model_name}] 한도 초과(429) — 다음 모델로 폴백")
+                continue  # 다음 모델 시도
+            # 429 외 에러는 즉시 중단
+            logger.error(f"[{model_name}] API 오류: {err_str[:120]}")
+            break
 
-    except Exception as e:
-        logger.error(f"Gemini API call failed: {e}")
-        return InsightResult(
-            summary_points=[f"AI 분석 중 오류 발생: {str(e)[:120]}"],
-            investment_insight="[오류] Gemini API 호출에 실패했습니다. API 키와 네트워크 상태를 확인해주세요.",
-        )
+    # 모든 모델 실패
+    logger.error("모든 Gemini 모델 호출 실패")
+    return InsightResult(
+        summary_points=["AI 분석에 실패했습니다. 오늘 오후 5시 이후 재시도 예정."],
+        investment_insight="[오류] 모든 Gemini 모델의 무료 한도가 소진되었습니다. 매일 오후 5시(KST) 기준으로 초기화됩니다.",
+    )
 
 
 if __name__ == "__main__":
