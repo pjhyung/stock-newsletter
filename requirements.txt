@@ -14,6 +14,9 @@ Jinja2==3.1.4
 # Environment variables
 python-dotenv==1.0.1
 
+# Email sending (Resend API - 무료 3,000건/월)
+resend==2.5.1
+
 # Local scheduling (optional, for --schedule flag)
 schedule==1.2.2
 
