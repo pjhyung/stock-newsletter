@@ -46,6 +46,7 @@ from src.news_fetcher import collect_news
 from src.insight_generator import generate_insights
 from src.slack_bot import format_slack_message, send_draft, wait_for_approval
 from src.html_builder import build_newsletter_html, save_newsletter
+from src.email_sender import send_newsletter_email
 
 
 def run_pipeline() -> None:
@@ -101,9 +102,17 @@ def run_pipeline() -> None:
         logger.info("  ⏰ 타임아웃 → 자동 승인으로 처리")
 
     # ── Step 5: HTML 뉴스레터 생성 및 저장 ──────────────────
-    logger.info("[5/5] HTML 뉴스레터 생성 중...")
+    logger.info("[5/6] HTML 뉴스레터 생성 중...")
     html = build_newsletter_html(articles, insights, user_comment=user_comment)
     output_path = save_newsletter(html)
+
+    # ── Step 6: 이메일 발송 (Gmail SMTP) ─────────────────
+    logger.info("[6/6] 이메일 발송 중...")
+    sent = send_newsletter_email(html, output_path=output_path)
+    if sent:
+        logger.info("  ✓ 이메일 발송 완료")
+    else:
+        logger.info("  ⚠ 이메일 발송 건너뜀 (설정 미완료 또는 오류)")
 
     logger.info(sep)
     logger.info("✅ 파이프라인 완료!")
