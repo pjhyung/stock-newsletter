@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 10월 11일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 10월 11일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[아마존(AMZN)이 80억 달러 규모의 엔비디아 칩 구매를 외부 금융 구조(SPV)로 우회 조달 방안 검토] → AI 인프라 투자 비용 부담이 가중되는 가운데 빅테크의 자금 조달 방식 변화가 관련 하드웨어 및 클라우드 생태계에 미칠 파장에 주목할 필요가 있음.</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[미국 국채 금리 및 유가 상승 속 소비재 판매 둔화와 실적 가이던스 악화 조우] → 거시경제적 부담이 커지면서 소비재 및 내수 섹터 전반에 걸쳐 투자 심리가 위축될 가능성이 큼.</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[태양광 업체 선런(Sunrun)의 CEO를 비롯한 주요 경영진들의 대규모 자사주 매도 릴레이 포착] → 내부자들의 연이은 대량 매도 물량 출회는 단기적으로 해당 종목 및 신재생에너지 섹터에 대한 투자자들의 경계감을 높이는 요인으로 작용할 수 있음.</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[사우디 리아드 공항 피습 사건 발생 및 중동 지정학적 리스크 심화] → 에너지 공급 차질 우려와 함께 방산 및 항공우주 관련 종목들에 대한 단기적 수급 유입 가능성이 제기됨.</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>현재 월가 증시는 고금리와 유가 상승 압박 속에서 소비 둔화 우려와 인플레이션 지표 발표를 앞두고 관망세를 보이고 있습니다. 특히 빅테크 기업들의 막대한 AI 인프라 투자(예: AMZN의 엔비디아 칩 관련 금융 구조 활용)가 지속되면서 자본 효율성에 대한 시장의 검증이 거세지고 있으며, NVDA를 비롯한 반도체·AI 밸류체인의 성장 지속 가능성에 대한 면밀한 분석이 요구됩니다. 이와 함께 지정학적 리스크 확대로 방산 및 항공우주 섹터가 반사이익을 얻을 수 있는 반면, 내부자 매도가 집중된 친환경·태양광 섹터는 신중한 접근이 필요합니다. 📌 주목 섹터: 인공지능/반도체, 방산/항공우주, 필수소비재 — AI 인프라 투자의 효율성 검증이 이어지는 가운데, 지정학적 리스크에 대응하고 거시경제 불확실성을 방어할 수 있는 섹터 중심의 선별적 접근이 유리함.</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/sunrun-president--cro-paul-dickson-sells-122971-in-company-stock-93CH-4942393" target="_blank" rel="noopener">
+          <div class="article-title">Sunrun president & CRO Paul Dickson sells $122,971 in company stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-11</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/ncino-ceo-sean-desmond-sells-150716-of-ncno-stock-93CH-4942392" target="_blank" rel="noopener">
+          <div class="article-title">Ncino CEO Sean Desmond sells $150,716 of NCNO stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-11</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/sunrun-ceo-mary-powell-sells-188939-in-shares-93CH-4942386" target="_blank" rel="noopener">
+          <div class="article-title">Sunrun CEO Mary Powell sells $188,939 in shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-11</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/pc-connection-director-david-beffanegrini-sells-405250-in-stock-93CH-4942385" target="_blank" rel="noopener">
+          <div class="article-title">PC Connection director David Beffa-Negrini sells $405,250 in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-11</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/sunrun-chief-legal--people-officer-sells-77967-in-stock-93CH-4942379" target="_blank" rel="noopener">
+          <div class="article-title">Sunrun chief legal & people officer sells $77,967 in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-11</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/justice-department-probes-tv-networks-over-trump-pool-coverage-new-york-times-reports-4942303" target="_blank" rel="noopener">
+          <div class="article-title">Justice Department probes TV networks over Trump pool boycott</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-11</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/10/10/cerebras-is-about-as-big-as-nvidia-s-data-center-business-was-nearly-a-decade-ago-the-similarities-mostly-end-there/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Cerebras Is About as Big as Nvidia's Data Center Business Was Nearly a Decade Ago. The Similarities Mostly End There.</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-11</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/sunrun-cao-maria-barak-sells-13753-in-stock-93CH-4942369" target="_blank" rel="noopener">
+          <div class="article-title">Sunrun CAO Maria Barak sells $13,753 in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-11</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/10/10/consumer-check-in-ais-progress/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Consumer Check-In & AI’s Progress</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-11</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/workday-director-david-duffield-sells-185m-in-shares-93CH-4942359" target="_blank" rel="noopener">
+          <div class="article-title">Workday director David Duffield sells $18.5m in shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-11</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
