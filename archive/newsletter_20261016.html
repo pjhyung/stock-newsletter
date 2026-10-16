@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 10월 16일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 10월 16일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[Anthropic의 기업가치 고평가 우려로 기술주 선물 하락] → [대형 기술주 및 AI 관련 섹터의 단기 변동성 확대 요인으로 작용할 전망]</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[미국과 멕시코 간 관세 협상 진전 난항 보도] → [무역 불확실성 증대로 인해 관련 제조업 및 국경 인접 공급망 관련 주가에 부담]</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[백악관의 스페이스X 우크라이나 위성 서비스 제한 명령 보도] → [우주·항공 및 방산 섹터 내 지정학적 리스크 관련 투자 심리에 영향]</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[S&P 500 및 나스닥, 전일 반등 이후 주간 단위 하락세 기록 중] → [주말을 앞두고 투자자들의 관망세가 짙어지며 지수 상단이 제한될 가능성]</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>전일 반등세를 보였던 뉴욕증시는 Anthropic 고평가 논란과 미·멕시코 관세 협상 교착 등 매크로 및 개별 악재가 겹치며 다소 무거운 분위기로 개장을 맞이하고 있습니다. 특히 AI 밸류에이션에 대한 의구심이 대형 기술주(NVDA, MSFT 등)의 숨 고르기를 유발할 수 있으며, 이와 맞물려 데이터센터 전력 공급 및 인프라 관련주로 수급이 분산될 가능성이 존재합니다. 다만, 전반적인 지수가 주간 하락세를 향해 가고 있는 만큼 실적 가시성이 높거나 방어적인 섹터 중심으로 선별적 접근이 요구됩니다. 📌 주목 섹터: [AI인프라], [반도체], [유틸리티/전력] — AI 밸류에이션 논란 속에서도 구조적 전력 수요와 실적이 뒷받침되는 인프라 및 핵심 공급망 섹터가 상대적 방어력을 보일 수 있기 때문</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://finance.yahoo.com/m/2cd5e2a7-a743-35dd-994e-11a2ba3c6d46/dow-jones-futures%3A-techs.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Dow Jones Futures: Techs Slide On Anthropic Valuation Report; Tesla Roadster On Tap</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (TSLA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-16</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://news.google.com/rss/articles/CBMi1wFBVV95cUxOdTR2OS1FVlQtSmxpN2VxQXNNU2M3dGdaZjE0TTZOS2tXV3ozWWNoMzFWQVZzSWthbENXX1YxTDZiaXhvS0UtNFRiME45bXNaeVlLWFRtMjFJbmVPSUEtWTc3akQwZ0VZSUE0YmRsU3VJeEtueXRwcngxbnJWTnVSQU1XQ3kzbnNrTEJtWHJHMkY5NXlGN2lPUm1ldm14UnRZTUxxSlE1RWJPeUJLX3NfR01PcjRGc0VQb2hWZW1jV3ZQbVdlU2UyMUh6ZFpuaWFmQzZlZWp6Z9IB3wFBVV95cUxQOFN2bDB3STVKWjRlSHJyc2QtU2VMdnJDT2hvQTljNG9pUUJ5MHNTUXRUNTRrRFhTS2JrdHVweDRsaEFwaWFscTctSktpbGIyMXFZZ3FJWk1LY29FSnQyRzNJaFFDVW0yd2kyZmFGRUJfTnZ4WHY2cEpiYzVKQTg2YXo2UVoxX2RsQzJacVZGNVdKck5KR0VmV2t2VXJjVUgtS0d0aGZBVjF0Vzk1SGxvOEJyM2xBOHNzVXY1cnd3c3pJM3NyM0VjZHZHaDNTeFdOQ2luYWJaWGl5S2JoRGxJ?oc=5" target="_blank" rel="noopener">
+          <div class="article-title">Wall Street Highlightes: S&P 500 Halts Three-Day Fall, Nasdaq Changed Little After Wednesday's Rout - NDTV Profit</div>
+          <div class="article-meta">
+            <span>Google News (S&P500 NASDAQ market)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-16</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/10/16/india-rupee-rbi-dollar-iran-war.html" target="_blank" rel="noopener">
+          <div class="article-title">India's rupee forecast to weaken toward 100-per-dollar level even as RBI pushes back</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-16</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/micron-technology-svp-michael-ray-sells-58-million-in-stock-93CH-4952918" target="_blank" rel="noopener">
+          <div class="article-title">Micron Technology SVP Michael Ray sells $5.8 million in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-16</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/micron-svp-chief-legal-officer-michael-ray-sells-37891-in-stock-93CH-4952917" target="_blank" rel="noopener">
+          <div class="article-title">Micron SVP, chief legal officer Michael Ray sells $37,891 in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-16</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/pls-group-shares-rise-3-as-it-approves-13-billion-lithium-expansion-4952908" target="_blank" rel="noopener">
+          <div class="article-title">PLS Group shares rise 3% as it approves $1.3 billion lithium expansion</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-16</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/commodities-news/progress-toward-a-usmexico-tariff-deal-has-stalled-wsj-reports-4952880" target="_blank" rel="noopener">
+          <div class="article-title">Progress toward a US-Mexico tariff deal has stalled, WSJ reports</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-16</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/10/15/how-to-earn-600-a-month-from-a-company-that-builds/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">How to Earn $600 a Month From a Company That Builds and Operates Power Plants for Data Centers</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-16</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/crowdstrike-president-and-ceo-george-kurtz-sells-515m-in-stock-93CH-4952904" target="_blank" rel="noopener">
+          <div class="article-title">Crowdstrike president and CEO George Kurtz sells $5.15M in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-16</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/talos-energy-10-owner-sells-518m-in-shares-93CH-4952903" target="_blank" rel="noopener">
+          <div class="article-title">Talos Energy 10% owner sells $51.8m in shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-16</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
