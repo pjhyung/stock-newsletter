@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 10월 19일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 10월 19일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>다우존스 선물 지수 반등 및 테슬라·메타 등 주요 빅테크 실적 대기 → AI 섹터의 조정을 극복하고 모멘텀을 되찾을지 시장의 이목이 집중됨</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>유가 하락 및 트럼프의 러시아 제재 면제 조치 → 에너지 가격 안정화가 뉴욕증시 전반의 하방 경직성을 지지하는 요인으로 작용함</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>구글과 전력 계약을 체결한 유틸리티 기업 American Electric Power(AEP)의 대규모 투자 발표 → AI 데이터센터 전력 수요가 유틸리티 섹터의 핵심 성장 동력으로 부각됨</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>AI 메모리 반도체 시장의 호황 속 마이크론(MU) 등 관련 주가 및 전망 재조명 → 5년 장기 관점에서 AI 메모리 밸류체인의 투자 매력이 지속적으로 평가받고 있음</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>현재 미국 주식 시장은 최근 AI 관련주들의 차익실현 매물과 주요 지지선 이탈 이후, 테슬라와 메타 등 빅테크 기업들의 실적 발표를 앞두고 관망세와 반등 시도가 교차하는 국면입니다. 거시경제 측면에서는 유가 하락이 인플레이션 압박을 완화하는 긍정적 신호를 주는 반면, 미국의 연간 이자 비용이 1조 달러를 돌파하는 등 고금리 환경에 따른 재정 부담은 여전히 주식 시장의 잠재적 리스크로 상존합니다. 섹터별로는 AI 데이터센터 확장에 따른 전력 인프라 수요로 인해 유틸리티(AEP 등) 섹터가 새로운 수혜주로 부각되고 있으며, 메모리 반도체(마이크론 등)와 빅테크의 캡엑스(CaPex) 집행 방향에 따라 관련 기술주의 변동성이 확대될 것으로 전망됩니다. 📌 주목 섹터: AI·반도체, 유틸리티, 빅테크 — AI 밸류체인의 성장 모멘텀과 데이터센터 전력 수요, 그리고 주요 기업 실적에 따른 섹터별 차별화 장세가 예상됨</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/australias-ampol-thirdquarter-lytton-refining-margin-more-than-doubles-4956132" target="_blank" rel="noopener">
+          <div class="article-title">Australia’s Ampol third-quarter Lytton refining margin more than doubles</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/m/4342d021-69d3-3aa1-9753-76f72c9ba95d/dow-jones-futures-rebound.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Dow Jones Futures Rebound After AI Sell-Off; Meta, SpaceX, Tesla Earnings Key</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (META)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/why-is-fleetpartners-stock-surging-today-93CH-4956177" target="_blank" rel="noopener">
+          <div class="article-title">Why is Fleetpartners stock surging today?</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://news.google.com/rss/articles/CBMilwJBVV95cUxQQjVweFYzTm5leDdVN3NMT1NGYzF6eHFhTmZ3dzQ2cHYta0J1bUlucjhqNnZuTS1idEFWSEZqOEJYb00xQzZwSkJISnhzSGpNWmduVkFLMTctN2liUG9fU09JRUdBYWV0QUFvNjVrUGZqR0F2UnZYZ0wtUlRiS1NFaVhXSUVFLW0yZGc0YklXZm9YLXQxSVdOS3I2Ti1vRndCUjh1NGJaMWk2OWlNQXJ1cGhqbnFfSEE2SXUycUJIN1FNeWphZlhodTFHVlF4SmFwRW5PbmlVeDdoQzFZQllkaVlMTC02UG1qSFN6MTBrYjNOT0tyRW5fZlBtNWZjN1RmYWw4N0dzT0lVYUNIeEViZ3piSm9YZmM?oc=5" target="_blank" rel="noopener">
+          <div class="article-title">If I Could Only Own 1 Artificial Intelligence (AI) Memory Stock for the Next 5 Years, It Wouldn't Be Micron. - The Globe and Mail</div>
+          <div class="article-meta">
+            <span>Google News (AI stocks artificial intellige)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/asian-stocks-skid-wall-street-and-bonds-aided-by-oil-slip-4956176" target="_blank" rel="noopener">
+          <div class="article-title">Asian stocks skid, Wall Street and bonds aided by oil slip</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/why-is-cleanaway-waste-management-stock-surging-today-93CH-4956175" target="_blank" rel="noopener">
+          <div class="article-title">Why is Cleanaway Waste Management stock surging today?</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/dicks-sporting-goods-president-buys-499868-in-dks-shares-93CH-4956171" target="_blank" rel="noopener">
+          <div class="article-title">Dick’s Sporting Goods president buys $499,868 in DKS shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/royce-global-trust-ceo-clark-buys-10565-in-shares-93CH-4956172" target="_blank" rel="noopener">
+          <div class="article-title">Royce Global Trust CEO Clark buys $10,565 in shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/why-is-challenger-stock-surging-today-93CH-4956167" target="_blank" rel="noopener">
+          <div class="article-title">Why is Challenger stock surging today?</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/10/18/if-i-could-only-own-1-artificial-intelligence-ai-m/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">If I Could Only Own 1 Artificial Intelligence (AI) Memory Stock for the Next 5 Years, It Wouldn't Be Micron.</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-19</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
