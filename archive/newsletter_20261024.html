@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 10월 24일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 10월 24일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>테슬라와 스페이스X가 이익 급감 속에서 합병을 위한 특별위원회를 구성하고 올해 스티어링 휠이 없는 '사이버캐브' 출시를 추진함 → 테슬라(TSLA)의 파격적인 사업 재편과 자율주행 상용화 속도가 주가 변동성을 크게 확대시킬 것임</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>오픈AI가 보안 개정 후 프런티어 AI 훈련을 재개하고 널리 사용되는 소프트웨어의 결함을 공개함 → AI 인프라 및 소프트웨어 전반의 보안 리스크와 기술 개발 속도에 대한 경계감이 교차할 것임</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>트럼프 대통령이 일부 캐나다산 제품에 대한 관세를 철폐함 → 북미 교역 불확실성이 일부 완화되며 관련 물류 및 제조업계에 긍정적 영향 미칠 것임</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>마이크로소프트(MSFT), 알파벳(GOOGL), 아마존(AMZN) 등 빅테크가 AI 인프라 장비 매도세 속에서도 견고한 애저(Azure) 성장과 TPU 수요 대응력을 부각함 → 단기 낙폭 과대에 따른 저가 매수세 유입 가능성이 제기됨</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>현재 시장은 AI 인프라 섹터의 단기적인 매도세와 빅테크 기업들의 강력한 AI 컴퓨팅 수요 주장이 충돌하는 국면을 지나고 있습니다. 알파벳(GOOGL), 마이크로소프트(MSFT) 등은 견조한 클라우드 성장세를 바탕으로 AI 인프라 리셋 구간에서 투자 기회를 모색하고 있으며, 테슬라(TSLA)는 스페이스X와의 합병 검토 및 무핸들 자율주행차 출시라는 메가 이슈로 개별 모멘텀을 키우고 있습니다. 또한 펜타곤의 지출 증가에 힘입어 록히드마틴(LMT) 등 방산 섹터의 수주 잔고가 탄탄하게 유지되면서 경기 방어적 성격과 정책 수혜가 동시에 부각되는 모습입니다. 거시적으로는 일부 관세 철폐 등 무역 환경의 변화가 감지되는 만큼, 개별 기업의 펀더멘털과 섹터별 정책 모멘텀을 분리하여 접근하는 유연한 대응이 필요합니다. 📌 주목 섹터: AI·반도체, 자율주행·우주항공, 방산 — AI 인프라 저가 매수 기회와 테슬라의 파격적 사업 재편, 그리고 펜타곤 예산 증액에 따른 수혜가 집중되는 곳이기 때문입니다.</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://www.thestreet.com/investing/how-much-apple-stock-does-former-ceo-tim-cook-own?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">How much Apple stock does former CEO Tim Cook actually own?</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (AAPL)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.thestreet.com/automotive/tesla-wants-to-sell-a-car-with-no-steering-wheel-this-year?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Tesla wants to sell a car with no steering wheel this year</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (TSLA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://stocktwits.com/news-articles/markets/equity/stocktwits-zero-to-sixty-tesla-and-space-x-form-merger-committees-as-profits-drop-while-rivian-buys-ai-startup-and-gm-ford-advance-ev-plans/cZUG5xVRBU9?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Stocktwits Zero To Sixty: Tesla And SpaceX Form Merger Committees As Profits Drop, While Rivian Buys AI Startup And GM, Ford Advance EV Plans</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (TSLA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/openai-resumes-frontier-ai-training-with-enhanced-security-no-internet-access-4970304" target="_blank" rel="noopener">
+          <div class="article-title">OpenAI resumes frontier AI training after security overhaul, discloses flaw in widely used software</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/economy-news/uks-healey-to-give-two-statebacked-lenders-20-billion-capital-boost-in-budget-4970530" target="_blank" rel="noopener">
+          <div class="article-title">UK’s Healey to give two state-backed lenders £20 billion capital boost in budget</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/10/23/why-att-stock-plunged-on-friday/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Why AT&T Stock Plunged on Friday</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/economy-news/us-to-remove-50-tariffs-on-some-canadian-goods-to-help-republicans-in-midterms-wsj-reports-4970225" target="_blank" rel="noopener">
+          <div class="article-title">Trump ends tariffs on some Canadian products, as Senator Collins faces close race</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/company-news/therma-bright-plans-private-placement-of-up-to-420000-93CH-4970528" target="_blank" rel="noopener">
+          <div class="article-title">Therma Bright plans private placement of up to $420,000</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/economy-news/russia-ukraine-agree-to-local-ceasefire-as-new-peace-talks-planned--reuters-4970527" target="_blank" rel="noopener">
+          <div class="article-title">Russia, Ukraine agree to local ceasefire as new peace talks planned - Reuters</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/company-news/goldcana-closes-c1-million-flowthrough-private-placement-93CH-4970525" target="_blank" rel="noopener">
+          <div class="article-title">Goldcana closes C$1 million flow-through private placement</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-24</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
