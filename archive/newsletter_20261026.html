@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 10월 26일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 10월 26일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>미 연방준비제도(Fed)의 수요일 금리 결정을 앞두고 S&P 500 지수가 반등을 시도하며 주가지수 선물이 상승세를 보이고 있음 → 금리 인하 기대와 매파적 경계감이 혼재되며 지수 변동성 확대 예상</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>마이크로소프트, 알파벳, 아마존 등 빅테크 3사의 실적 발표를 앞두고 있으며, 이들은 S&P 500의 약 15%를 차지함 → 기술주 실적 결과에 따라 단기 시장 방향성과 AI 투자 심리가 크게 좌우될 것</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>스페이스X가 AI 칩(GPU) 구매를 위해 400억 달러 규모의 부채 조달을 완료했다고 밝힘 → AI 인프라 수요가 여전히 견고함을 증명하며 관련 반도체 및 빅테크 밸류에이션에 긍정적 영향</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>애플이 첫 폴더블폰 '아이폰 듀오'의 강력한 초기 수요로 인해 부품 공급업체에 증산을 요청함 → 부품 공급망 및 하드웨어 생태계 전반의 투자 심리 개선 자극</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>이번 주는 수요일 예정된 연방준비제도(Fed)의 금리 결정과 마이크로소프트·알파벳·아마존 등 빅테크 실적이라는 대형 이벤트를 소화하며 장세의 분수령을 맞이하고 있습니다. 최근 AI 관련주의 급등락과 스페이스X의 대규모 AI 칩 자금 조달 소식은 반도체 및 AI 인프라 수요가 여전히 유효함을 보여주는 반면, 실적 눈높이는 더욱 까다로워지고 있습니다. 거시경제적으로는 고금리 장기화 우려와 유가 변동성이 여전한 만큼, 펀더멘털이 탄탄한 우량주 중심의 선별적 접근이 요구되는 국면입니다. 📌 주목 섹터: [AI 및 반도체], [빅테크(소프트웨어/클라우드)], [모바일 하드웨어] — 견고한 AI 인프라 투자 수요와 실적 발표를 앞둔 대형 기술주의 모멘텀, 그리고 신제품(폴더블) 효과가 기대되는 IT 하드웨어의 수혜 여부를 주시해야 합니다.</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://news.google.com/rss/articles/CBMiqgFBVV95cUxQNjdsWDhvRE9sQ0FCQ3MtLTNLRV9kZ0FZVXdzZkhQVE9Kc2tiaVFUeUdlNGpENEZVWlUwZUhWbmk4LVc4bXZFSVhYR2hHQzhEM0ZLbzVhX0tTeERGbXRjaHpmZTE0X2JMUGYzT2Y5MkYzMy1NSS05bHpib3BBQTF3NHlaeng3U0oybmVLdEdOZ01HeEpRR3JtNG1vb1plUjhDdElneUUxQk1jQQ?oc=5" target="_blank" rel="noopener">
+          <div class="article-title">AI Stocks Surge, Then Plunge: Which of 4 Sectors Is Worth Buying? - 24/7 Wall St.</div>
+          <div class="article-meta">
+            <span>Google News (AI stocks artificial intellige)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-26</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/10/25/wall-street-thinks-archer-aviation-is-a-buy-heres/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Wall Street Thinks Archer Aviation Is a Buy. Here's Why I Don't.</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-26</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/10/25/stock-market-today-live-updates.html" target="_blank" rel="noopener">
+          <div class="article-title">Stock futures climb as traders try to recover from the S&P 500's losing week: Live updates</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-26</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/10/26/brazil-lula-win-presidential-election-runoff-vote.html" target="_blank" rel="noopener">
+          <div class="article-title">Brazil's Lula wins presidential election in runoff vote</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-26</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/company-news/6k-additive-q3-2026-slides-record-backlog-drives-expansion-plans-93CH-4971330" target="_blank" rel="noopener">
+          <div class="article-title">6K Additive Q3 2026 slides: record backlog drives expansion plans</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-26</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/company-news/greatland-q1-fy27-slides-production-beats-havieron-underway-93CH-4971327" target="_blank" rel="noopener">
+          <div class="article-title">Greatland Q1 FY27 slides: production beats, Havieron underway</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-26</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://247wallst.com/investing/2026/10/25/ai-stocks-surge-then-plunge-which-of-4-sectors-is-worth-buying/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">AI Stocks Surge, Then Plunge: Which of 4 Sectors Is Worth Buying?</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (META)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-26</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/economy-news/five-economic-challenges-facing-brazils-reelected-president-lula-4971326" target="_blank" rel="noopener">
+          <div class="article-title">Five economic challenges facing Brazil’s re-elected President Lula</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-26</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/us-stock-futures-edge-higher-after-bruising-tech-losses-fed-earnings-on-tap-4971325" target="_blank" rel="noopener">
+          <div class="article-title">U.S. stock futures edge higher after bruising tech losses; Fed, earnings on tap</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-26</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/10/26/spacex-closes-40-billion-debt-deal-for-ai-chips-elon-musk-.html" target="_blank" rel="noopener">
+          <div class="article-title">SpaceX closes $40 billion debt deal for AI chips, Elon Musk says</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-26</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
