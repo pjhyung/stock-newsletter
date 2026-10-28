@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 10월 28일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 10월 28일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[SK하이닉스, 3분기 실적 호조 및 250억 달러 주주환원 발표로 주가 8% 이상 급등] → [글로벌 메모리 반도체 및 AI 밸류체인 전반에 긍정적 모멘텀 제공]</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[테슬라 및 성장주 랠리 속 S&P 500 반등, 연방준비제도(Fed) 금리 결정 및 빅테크 실적 대기] → [시장 전반의 리스크 온 심리 회복 및 대형 기술주 실적에 따른 변동성 확대 대비 필요]</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[아마존, FCC의 115억 달러 글로벌스타 거래 승인 및 앤트로픽 IPO 최대 수혜주 부각] → [아마존(AMZN)의 AI 생태계 확장과 통신·클라우드 부문 경쟁력 강화에 기여]</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[보잉(BA), 737 생산 안정화 목표 시기가 2027년으로 지연되며 주가 약세 흐름] → [공급망 및 생산 차질 이슈로 인해 항공우주(BA) 섹터의 단기 센티먼트 위축]</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>오늘 증시는 연방준비제도의 금리 결정을 앞두고 기술주 중심의 랠리와 함께 AI 인프라 관련 호재가 시장을 지탱하고 있습니다. 특히 SK하이닉스의 어닝 서프라이즈와 역대급 주주환원 정책은 반도체 섹터 전반에 강력한 매수세를 유입시키며, 마이크론(MU) 등 동종 업계 전반에 긍정적인 파급효과를 낳고 있습니다. 거시경제적으로는 유가 반등과 견조한 달러 환율 속에서도 빅테크 실적 발표와 연준의 통화정책 방향성에 대한 경계감이 공존하는 모습입니다. 따라서 투자자들은 단기적인 모멘텀에 편승하기보다는 실적 가시성이 높은 핵심 AI 인프라 기업과 견조한 펀더멘털을 가진 성장주 위주로 선별적인 접근을 유지할 필요가 있습니다. 📌 주목 섹터: 반도체(Semiconductors), 클라우드/AI(Cloud & AI Infrastructure), 항공우주(Aerospace) — 탄탄한 실적과 AI 수요가 반도체·클라우드를 견인하는 반면, 생산 지연 이슈가 있는 항공우주는 개별 기업의 턴어라운드 타이밍을 주시해야 함</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/10/28/sk-hynix-third-quarter-profit.html" target="_blank" rel="noopener">
+          <div class="article-title">SK Hynix shares soar over 8% as profit beats, chipmaker to return $25 billion to investors</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/m/7066a700-b33b-3fa1-858d-f75f49b920da/dow-jones-futures%3A-growth.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Dow Jones Futures: Growth Stocks Rally, Tesla Clears Buy Point; Fed, Microsoft, Google On Tap</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (MSFT)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/economy-news/stocks-get-ai-lift-dollar-holds-steady-ahead-of-fed-decision-4977355" target="_blank" rel="noopener">
+          <div class="article-title">Stocks get AI lift, dollar holds steady ahead of Fed decision</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/lindblad-expeditions-director-svenolof-lindblad-sells-403m-shares-93CH-4977365" target="_blank" rel="noopener">
+          <div class="article-title">Lindblad Expeditions director Sven-Olof Lindblad sells $4.03M shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/interface-president--ceo-laurel-hurd-sells-254940-in-stock-93CH-4977366" target="_blank" rel="noopener">
+          <div class="article-title">Interface president & CEO Laurel Hurd sells $254,940 in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/10/27/how-many-shares-procter-gamble-fund-vacation/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Here's How Many Shares of Procter & Gamble It Would Take to Fund an Annual $3,000 Vacation From Dividends</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://stocktwits.com/news-articles/markets/equity/asts-stock-fcc-clears-amazon-globalstar-deal-even-more-competition/cZUByYZRB6P?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">ASTS Stock Slips Overnight As FCC Clears Amazon’s $11.5B Globalstar Deal — Touts ‘Even More Competition’</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (AMZN)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/company-news/sk-hynix-q3-2026-slides-revenue-tops-100t-80-margin-on-ai-boom-93CH-4977357" target="_blank" rel="noopener">
+          <div class="article-title">SK hynix Q3 2026 slides: revenue tops 100T, 80% margin on AI boom</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/commodities-news/oil-rebounds-as-houthi-attacks-on-saudi-arabia-overshadow-diplomatic-efforts-4977356" target="_blank" rel="noopener">
+          <div class="article-title">Oil rebounds as Houthi attacks on Saudi Arabia overshadow diplomatic efforts</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://stocktwits.com/news-articles/markets/equity/ba-stock-heads-for-weekly-loss-ceo-maps-path-to-10-billion-cash-flow-737-stabilization-slips-into-2027/cZUByFWRB62?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">BA Stock Heads For Weekly Loss: CEO Maps Path To $10B Cash Flow, 737 Stabilization Slips Into 2027</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (BA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-10-28</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
