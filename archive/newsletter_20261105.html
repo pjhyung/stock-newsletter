@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 11월 05일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 11월 05일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>민주당의 중간선거 압승과 유가 하락 여파로 다우 지수가 3% 급등하며 시장이 사상 최고치 부근 랠리를 보인 후 보합권에서 혼조세를 나타냄 → 증시 전반의 단기 변동성 확대 및 섹터별 차별화 장세 연출 가능</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>퀄컴(QCOM) CEO가 일론 머스크의 스타링크 협력에 대해 거대한 잠재력을 언급하며 2028 회계연도 실적 기여를 기대함 → 관련 통신 및 반도체 섹터의 중장기 모멘텀 강화</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>오라클(ORCL)이 200억 달러 규모의 주식 및 채권 발행과 AI 관련 매도세 여파로 일주일간 14% 급락함 → 대규모 자금 조달 및 AI 인프라 투자 비용에 대한 시장의 경계감 확산</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>테슬라(TSLA) CEO 일론 머스크를 둘러싼 공화당의 중간선거 패배 여파와 정치적 베팅이 이어짐 → 빅테크 최고경영자의 정치적 리스크가 관련 주가에 노이즈로 작용할 소지</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>이번 주 미국 주식 시장은 민주당의 중간선거 압승이라는 거시적 정치 지형 변화와 급락세를 보인 유가가 맞물리며 강력한 랠리 이후 숨 고르기 국면에 진입했습니다. 애플(AAPL), 마이크로소프트(MSFT), 아마존(AMZN) 같은 대형 기술주들이 매수 시그널을 보내고 있으나, 오라클(ORCL)의 대규모 자금 조달 여파와 AI 섹터 전반의 밸류에이션 점검이 동시에 진행 중입니다. 특히 퀄컴(QCOM)과 TSMC(TSM) 등 반도체 생태계는 단기 조정 속에서도 견조한 펀더멘털을 바탕으로 장기 성장을 도모하고 있어, 거시 경제의 불확실성과 개별 기업의 실적 모멘텀 간의 줄다리기가 예상됩니다. 따라서 투자자들은 무리한 추격 매수보다는 실적이 담보된 우량주 중심의 선별적 접근이 요구되는 시점입니다. 📌 주목 섹터: 반도체, 대형 기술주(Big Tech), 친환경/유가 연동 섹터 — AI 인프라 투자와 선거 이후 정책 변화에 따른 수혜 및 변동성 대응이 동시에 필요한 국면</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/11/05/liv-golf-liquidation-bc-partners.html" target="_blank" rel="noopener">
+          <div class="article-title">LIV Golf faces liquidation after BC Partners scraps rescue plan</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-05</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://stocktwits.com/news-articles/markets/equity/elon-musk-starlink-deal-tremendous-potential-qualcomm-ceo-fy28-cash-in/cNG1P4HR9EB?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Elon Musk’s Starlink Deal Has ‘Tremendous Potential,’ Qualcomm CEO Says — Eyes FY28 Cash-In, Calls It Just The ‘Beginning’</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (QCOM)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-05</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/m/a147bf9a-4218-3171-97a4-fb80fda211eb/dow-jones-futures-rise%2C-techs.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Dow Jones Futures Rise, Techs Fall; Apple, Microsoft, Amazon Flash Buy Signals In Postelection Rally</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (AAPL)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-05</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/up-37-since-march--this-aipicked-it-services-stock-keeps-climbing-5002093" target="_blank" rel="noopener">
+          <div class="article-title">Up 37% since March - this AI-picked IT services stock keeps climbing</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-05</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/11/04/stock-market-today-live-updates.html" target="_blank" rel="noopener">
+          <div class="article-title">Stock futures are little changed after big rally following Democrats' decisive midterm wins</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-05</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/arcutis-biotherapeutics-evp-masaru-matsuda-sells-137m-in-planned-share-sale-93CH-5002089" target="_blank" rel="noopener">
+          <div class="article-title">Arcutis Biotherapeutics evp Masaru Matsuda sells $1.37M in planned share sale</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-05</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/procore-director-kevin-j-oconnor-sells-884982-in-shares-93CH-5002088" target="_blank" rel="noopener">
+          <div class="article-title">Procore director Kevin J. O’Connor sells $884,982 in shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-05</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/palantir-director-lauren-friedman-sells-252981-in-shares-93CH-5002087" target="_blank" rel="noopener">
+          <div class="article-title">Palantir director Lauren Friedman sells $252,981 in shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-05</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/11/05/citi-employee-killed-in-shooting-at-florida-office-suspect-dead.html" target="_blank" rel="noopener">
+          <div class="article-title">Citi employee killed in shooting at Florida office, suspect dead</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-05</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/company-news/janus-living-prices-263-million-share-offering-at-2850-93CH-5002079" target="_blank" rel="noopener">
+          <div class="article-title">Janus Living prices 26.3 million share offering at $28.50</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-05</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
