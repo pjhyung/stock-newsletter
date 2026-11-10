@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 11월 10일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 11월 10일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>아시아 및 글로벌 기술주 반등: 월스트리트의 급반등에 힘입어 한국 및 일본의 반도체 주식과 소프트뱅크(13% 급등) 등 아시아 기술주가 동반 강세를 보임 → 기술주 투자 심리 회복 및 낙폭 과대 인식에 따른 저가 매수세 유입 기대.</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>중국의 10월 수출입 호조 및 무역 휴전 연장: 중국의 10월 수출이 전년 대비 35.2% 급증하고 미국과의 무역 휴전이 2개월 연장됨 → 글로벌 교역 우려 완화 및 공급망 안정에 긍정적 영향.</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>엔비디아(NVDA) CEO 관련 정치적·지정학적 리스크 부각: 트럼프 대통령이 엔비디아 젠슨 황 CEO와 중국계 여성의 연루 의혹에 대해 FBI 조사를 언급함 → 지정학적 불확실성 확대로 단기 변동성 확대 가능성.</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>유가 하락 및 중동 상황 안정화: 유가 하락세가 지속되며 인플레이션 압력이 완화되고 투자 심리가 개선됨 → 비용 부담 완화로 증시 전반에 우호적인 환경 조성.</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>오늘 증시는 유가 하락과 아시아 시장의 기술주 랠리에 힘입어 전일의 강세 모멘텀을 이어갈 것으로 예상됩니다. 특히 중국의 예상치를 상회한 수출 지표와 미·중 무역 휴전 연장은 글로벌 경기 침체 우려를 완화하는 요소입니다. 다만, 엔비디아(NVDA) CEO를 둘러싼 지정학적 노이즈와 미·중 기술 패권 경쟁은 AI 및 반도체 섹터의 잠재적 변동성 요인으로 작용할 수 있습니다. 매크로 환경은 유가 하락과 인플레 압력 완화로 안정세를 보이고 있으나, 개별 기업의 정치적 리스크를 모니터링하며 신중한 접근이 요구됩니다. 📌 주목 섹터: 반도체, AI, 항공우주/방산 — 글로벌 기술주 저가 매수세 유입과 함께 지정학적·정책적 모멘텀이 집중되는 국면이기 때문임</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://stocktwits.com/news-articles/markets/equity/spcx-stock-barclays-tmobile-cleanest-fit-for-potential-spacex-buyout/cNGudG2R97L?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">SPCX Stock Logs 2-Day Winning Streak: Barclays Calls T-Mobile 'Cleanest' Fit For Potential SpaceX Buyout</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (QCOM)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-10</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/markets/world-indices/articles/asia-stocks-rally-korean-chips-042232811.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Asia stocks rally as Korean chips surge and oil retreat lifts sentiment</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-10</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.marketbeat.com/instant-alerts/transcript-archer-aviation-q3-earnings-call-highlights-2026-11-09/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Archer Aviation Q3 Earnings Call Highlights</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (BA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-10</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/billionaire-tax-measure-on-california-ballot-defeated-5014025" target="_blank" rel="noopener">
+          <div class="article-title">Billionaire tax measure on California ballot defeated</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-10</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/commodities-news/china-extends-suspension-of-24-tariff-on-us-imports-for-two-months-5010427" target="_blank" rel="noopener">
+          <div class="article-title">China extends US trade truce by two months</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-10</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/economy-news/us-extends-vietnam-trade-probe-on-intellectual-property-to-end-of-february-5014037" target="_blank" rel="noopener">
+          <div class="article-title">US extends Vietnam trade probe on intellectual property to end of February</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-10</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/archerdanielsmidland-director-david-mcatee-buys-196756-in-stock-93CH-5014034" target="_blank" rel="noopener">
+          <div class="article-title">Archer-Daniels-Midland director David McAtee buys $196,756 in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-10</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/8x8-chief-legal-officer-laurence-denny-sells-23202-of-stock-93CH-5014033" target="_blank" rel="noopener">
+          <div class="article-title">8x8 chief legal officer Laurence Denny sells $23,202 of stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-10</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/commodities-news/chinas-october-crude-oil-imports-rise-to-highest-level-since-march-amid-middle-east-war-5014020" target="_blank" rel="noopener">
+          <div class="article-title">China’s October crude oil imports rise to highest level since March amid Middle East war</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-10</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/11/10/ai-softbank-sk-hynix-samsung-wall-street-tech-stocks.html" target="_blank" rel="noopener">
+          <div class="article-title">SoftBank Group shares surge 13% as Asian tech stocks track Wall Street rebound</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-10</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
