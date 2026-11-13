@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 11월 13일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 11월 13일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[NVIDIA CEO 젠슨 황의 불륜 및 중국 간첩 연루 스캔들로 인한 전격 사퇴] → [AI 섹터의 단기 변동성 확대 및 투자 심리 위축 불가피]</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[CFO 콜레트 크레스(Colette Kress)의 임시 CEO 선임 및 아시아 증시의 반도체주 선방] → [시장이 최악의 충격을 소화하며 AI 랠리가 지속될 가능성에 무게]</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[AI 불확실성 증대에 따른 애플(AAPL), 코스트코(COST) 등 방어주로의 자금 이동] → [시장 전반의 리스크 오프 성향 강화 및 섹터 로테이션 발생]</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[세레브라스(Cerebras)의 호실적 발표 및 마이크로소프트(MSFT)와의 파트너십 체결] → [개별 대형 테크 및 AI 인프라 관련주의 차별적 반등 모멘텀 제공]</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>오늘 미국 주식 시장은 AI 반도체 산업의 상징인 NVIDIA(NVDA)의 젠슨 황 CEO 사퇴라는 메가톤급 이슈를 소화하며 개장 전 혼조 속 반등을 시도하고 있습니다. 국채 금리 상승 압력과 함께 AI 섹터 전반에 단기적인 불확실성이 커졌으나, 아시아 증시와 뉴욕 주가지수 선물은 충격을 빠르게 완화하며 방어주(AAPL, COST 등)로의 자금 순환매와 개별 호재성 종목(Cerebras-MSFT 협력 등) 중심의 장세를 연출하고 있습니다. 거시경제적 변동성과 대형 테크 리스크가 맞물려 있는 만큼, 투자자들은 무조건적인 매수보다는 섹터별 펀더멘털을 재점검하며 리스크 관리에 주력할 것으로 보입니다. 📌 주목 섹터: 방어주(빅테크 헷지), AI 반도체, 클라우드 인프라 — AI 섹터의 단기 충격에 따른 피난처 수요와 개별 호재 중심의 차별화 장세가 예상되기 때문</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://finance.yahoo.com/m/4a3dff17-3e8e-33ca-823f-8ac12eff6a4a/dow-jones-futures-rise-after.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Dow Jones Futures Rise After Market Weathers Nvidia CEO Huang's Exit, Surging Yields</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (TSLA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-13</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/technology/ai/articles/nvidia-preparing-oust-ceo-jensen-002910155.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Nvidia CEO Huang quits after affair with suspected China spy</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-13</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/technology/articles/could-replace-departed-jensen-huang-000357633.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Who is Colette Kress, interim Nvidia CEO after Jensen Huang exit?</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-13</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.benzinga.com/markets/prediction-markets/26/11/63228832/jensen-huang-to-rejoin-nvidia-crypto-prediction-markets-weigh-the-odds-as-colette-kress-emerges-as-interim-ceo?utm_source=yahooFinance&utm_campaign=partner_feed&utm_medium=referral&.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Jensen Huang to Rejoin Nvidia? Crypto Prediction Markets Weigh the Odds as Colette Kress Emerges as Interim CEO</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (AAPL)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-13</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/markets/stocks/articles/tech-firms-extend-rally-asia-024621637.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Tech firms extend rally in Asia as traders look past Huang's downfall</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-13</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/larimar-therapeutics-president-and-ceo-carole-benmaimon-acquires-49953-in-stock-93CH-5023982" target="_blank" rel="noopener">
+          <div class="article-title">Larimar Therapeutics president and CEO Carole Ben-Maimon acquires $49,953 in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-13</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/brookdale-senior-living-director-winkle-buys-358068-in-stock-93CH-5023981" target="_blank" rel="noopener">
+          <div class="article-title">Brookdale Senior Living director Winkle buys $358,068 in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-13</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/hinge-health-cfo-james-budge-sells-437m-in-stock-prices-1195212334-93CH-5023980" target="_blank" rel="noopener">
+          <div class="article-title">Hinge Health CFO James Budge sells $4.37M in stock, prices $119.52-$123.34</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-13</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/pagaya-cfo-dobres-sells-174420-in-class-a-ordinary-shares-93CH-5023979" target="_blank" rel="noopener">
+          <div class="article-title">Pagaya CFO Dobres sells $174,420 in class A ordinary shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-13</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://news.google.com/rss/articles/CBMijgJBVV95cUxPY0lzbTFRYUY2MVdlVmpURE5aY2VEcXFjWGl4STFQVVRUOEZZYWx4bEZ1MkJUV1hrV0RhVzlYVUdtRV9kQl9aUWVfQ3JsaWd5OW9Dc01ITHB0aElTRFVEVmRMX1Y4UUxsaFdRc0VORHNfMC1RRmxMODc1VHptT3VYR0NYTFpHY0tzbGxfYzEwZEtGVXctVmRCT2tHQ28tZVExeEYwTExDbVF4Sk5hcVpBQ2FLQ3dNeWhOUXpiNkhfaks3bF83MmVfaUJnWDhEdjNNZWVyYU1vNURwUHprcjJ6LU1tRlFIN2M2NktpVFRSOUJ5MGNsZTJGWmJUUEZKSEpJbXY3QTAydHdzbmZzQ3c?oc=5" target="_blank" rel="noopener">
+          <div class="article-title">Dow, S&P 500, Nasdaq Futures Edge Higher As Markets Attempt To Recover From Nvidia Rout: SLS, MSFT, CADL, MSTR In Focus - Stocktwits</div>
+          <div class="article-meta">
+            <span>Google News (S&P500 NASDAQ market)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-13</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
