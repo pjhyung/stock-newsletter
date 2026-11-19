@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 11월 19일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 11월 19일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[Anthropic의 대규모 IPO 흥행과 나스닥 선물 상승] → 기술주 전반에 대한 투자 심리가 개선되며 지수 상승 견인</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[엔비디아(NVDA) 젠슨 황 이후 대비 및 AI 지배력 지속 전망] → AI 반도체 섹터의 중장기 성장성에 대한 시장 신뢰 재확인</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[연준 금리 경로 주시 속 금 가격 반등] → 매크로 불확실성에 따른 안전자산 선호 심리 교차 반영</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>[기술 장애 여파로 코스트코 등 비상용품 사재기 현상 발생] → 소비재 및 관련 인프라 리스크 헤지 수요 자극</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>오늘 미국 증시는 대형 AI 스타트업 Anthropic의 성공적인 IPO 데뷔와 나스닥-100 선물의 강세에 힘입어 기술주 중심의 반등 모멘텀을 형성하고 있습니다. 특히 엔비디아(NVDA)와 같은 선도 기업들의 AI 지배력 지속 가능성이 부각되는 동시에, 연준의 금리 정책 전망과 맞물려 매크로 환경의 변동성이 상존하고 있습니다. 알파벳(GOOGL) 등 일부 빅테크의 AI 지출 우려에 따른 밸류에이션 매력도 부각되고 있어 선별적 접근이 필요합니다. 📌 주목 섹터: 인공지능(AI), 사이버보안, 귀금속/안전자산 — Anthropic IPO 흥행에 따른 AI 모멘텀 지속, 기술 장애 여파로 부각되는 보안 수요, 그리고 연준 금리 경로에 연동된 헤지 수단으로서의 매력 때문입니다.</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://www.cbsnews.com/news/costco-panic-buying-tech-outages-generators/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Costco sees surge in panic buying after tech outages, report says</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (MSFT)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/m/107e5a2c-4fba-3df3-b2fd-5d1160e65516/dow-jones-futures-rise%3B.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Dow Jones Futures Rise; Anthropic IPO Prices High, Palo Alto And Everpure Rally On Earnings</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.marketwatch.com/story/my-husband-is-happily-retired-at-64-and-thinks-i-should-keep-working-is-he-being-fair-325c5f38?mod=mw_rss_topstories" target="_blank" rel="noopener">
+          <div class="article-title">My husband is happily retired at 64 and thinks I should keep working. Is he being fair?</div>
+          <div class="article-meta">
+            <span>MarketWatch</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.marketwatch.com/story/it-is-heartbreaking-exhausting-and-downright-dirty-my-brother-took-over-our-ailing-mothers-life-and-finances-what-can-i-do-b4d48817?mod=mw_rss_topstories" target="_blank" rel="noopener">
+          <div class="article-title">‘It’s downright dirty’: My brother took over our ailing mother’s life and finances. What can I do?</div>
+          <div class="article-meta">
+            <span>MarketWatch</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/11/19/china-south-korea-trade-deal-films-gaming.html" target="_blank" rel="noopener">
+          <div class="article-title">'Parasite' backer and other South Korean media, gaming and travel stocks rally on China trade deal</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/economy-news/stocks-rise-after-anthropic-ipo-pricing-sets-stage-for-blockbuster-debut-5037540" target="_blank" rel="noopener">
+          <div class="article-title">Asian stocks fail to get a lift from Anthropic’s IPO pricing</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://stocktwits.com/news-articles/markets/equity/dan-ives-nvidia-central-nervous-system-us-economy-jensen-huang-bullish-nvda-stock/cNbLvTwR9iX?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Dan Ives Says Nvidia’s AI Dominance Can Survive Without Jensen Huang: ‘Two, Three Years Ahead’ Of Rivals</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/why-is-tencent-shares-slumped-to-a-near-3yr-low-today-heres-why-93CH-5037660" target="_blank" rel="noopener">
+          <div class="article-title">Why is Tencent shares slumped to a near 3-yr low today, here’s why</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/transcripts/syntara-at-bell-potter-healthcare-conference-pipeline-cash-and-catalysts-93CH-5037659" target="_blank" rel="noopener">
+          <div class="article-title">Syntara at Bell Potter healthcare conference: pipeline, cash and catalysts</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-19</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/economy-news/arizona-investigating-openai-others-over-rogue-agents-reuters-reports-5037658" target="_blank" rel="noopener">
+          <div class="article-title">Arizona investigating OpenAI, others over rogue agents, Reuters reports</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-19</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
