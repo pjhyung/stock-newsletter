@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 11월 22일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 11월 22일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>중국 및 대만의 AI 관련주 급락으로 테크 섹터 전반에 매도세 확산 → 글로벌 반도체 및 AI 밸류체인 단기 변동성 확대 및 투자심리 위축 우려</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>엔비디아(NVDA) 주가가 고점 대비 크게 하락하며 밸류에이션 매력이 부각되는 동시에 시장의 실적 지속성에 대한 의구심 공존 → 저가 매수세와 신중론 간의 치열한 공방 예상</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>인텔(INTC)이 최첨단 공정의 첫 고객을 확보했다고 발표했으나 구체적 계약 규모 미공개 및 주가 침체 지속 → 턴어라운드 가능성에 대한 검증 필요</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>오늘 글로벌 주식 시장은 아시아 증시를 중심으로 불어닥친 AI 및 반도체 섹터의 차익실현 및 매도세($1.7조 규모의 중국 AI 주식 손실, 대만 증시 6.7% 하락 등)가 뉴욕증시 개장 전 투자심리를 무겁게 누르고 있습니다. 특히 엔비디아(NVDA)의 밸류에이션 매력과 실적 의구심이 교차하는 가운데, 인텔(INTC)의 파운드리 고객 확보 뉴스는 반도체 업계 내 지형 변화 가능성을 시사하고 있습니다. 거시경제적 불확실성과 함께 테크·반도체 섹터의 피로감이 겹친 만큼, 단기적으로는 모멘텀 추종보다는 실적이 뒷받침되는 우량주 중심의 방어적 접근이 유리해 보입니다. 📌 주목 섹터: 반도체, AI인프라, 신재생에너지 — 지정학적 변동성과 기술주 조정 국면 속에서 밸류에이션 매력이 부각되거나 구조적 성장이 기대되는 종목 선별 필요</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/11/21/the-smartest-dividend-stock-to-buy-with-1000-right-now/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">The Smartest Dividend Stock to Buy With $1,000 Right Now</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-22</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/11/21/intel-says-it-just-signed-its-first-customer-for-its-most-advanced-chipmaking-process-the-stock-is-still-more-than-60-below-its-june-record/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Intel Says It Just Signed Its First Customer for Its Most Advanced Chipmaking Process. The Stock Is Still More Than 60% Below Its June Record.</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-22</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/11/21/3-stocks-im-ready-to-buy-if-the-market-crashes/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">3 Stocks I'm Ready to Buy if the Market Crashes</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-22</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/11/21/this-under-the-radar-crypto-stock-could-surprise-e/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">This Under-the-Radar Crypto Stock Could Surprise Everyone</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-22</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/german-industrial-strikes-widen-as-ig-metall-calls-23000-workers-to-walk-out-5043690" target="_blank" rel="noopener">
+          <div class="article-title">German industrial strikes widen as IG Metall calls 23,000 workers to walk out</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-22</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/wabtec-evp-operations-gregory-sbrocco-sells-280782-in-shares-93CH-5043688" target="_blank" rel="noopener">
+          <div class="article-title">Wabtec evp operations Gregory Sbrocco sells $280,782 in shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-22</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/cf-financial-evp-john-seaman-sells-46800-in-company-shares-93CH-5043687" target="_blank" rel="noopener">
+          <div class="article-title">C&F Financial evp John Seaman sells $46,800 in company shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-22</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/stereotaxis-director-paul-isaac-acquires-10900-of-stxs-shares-93CH-5043682" target="_blank" rel="noopener">
+          <div class="article-title">Stereotaxis director Paul Isaac acquires $10,900 of STXS shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-22</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/11/21/should-you-forget-nvidia-and-buy-these-2-ai-memory-stocks-instead/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Should You Forget Nvidia and Buy These 2 AI Memory Stocks Instead?</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-22</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/commodities-news/cop31-climate-talks-close-to-final-deal-says-summit-president-5043619" target="_blank" rel="noopener">
+          <div class="article-title">COP31 climate talks close to final deal, says summit president</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-22</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
