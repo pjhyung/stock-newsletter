@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 11월 24일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 11월 24일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>젠슨 황의 엔비디아(NVDA) 복귀로 AI 및 반도체 섹터가 강력한 랠리를 기록하며 시장 전체의 투자 심리를 견인함 → AI 관련주 단기 반등 모멘텀 강화 및 변동성 확대</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>테슬라(TSLA)와 스페이스X 간의 3조 5,000억 달러 규모의 잠재적 합병 협상 보도가 전해짐 → 테슬라 주가 변동성 극대화 및 모빌리티·우주항공 섹터 주목도 급증</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>연준의 금리 정책 불확실성과 AI 랠리에 힘입어 미 달러화가 20개월 최고치 근처에서 강세를 유지함 → 글로벌 유동성 흐름 및 원자재 가격에 하방 압력 작용</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>현재 월스트리트는 젠슨 황의 엔비디아(NVDA) 복귀가 촉발한 AI 및 반도체 섹터의 폭발적인 릴리프 랠리와 함께 테슬라(TSLA)의 대형 M2M(합병) 이슈라는 강력한 개별 재료에 주목하고 있습니다. 거시경제적으로는 연준의 긴축 기조 지속 우려와 맞물려 달러화가 20개월래 최고치 근처에 머물며 증시의 상단을 제한하는 요인으로 작용 중입니다. 다만, 최근 급락 이후 연준의 정책적 개입(Fed Put) 가능성이 다시 제기되는 등 시장은 변동성 장세 속에서 새로운 균형을 모색하고 있습니다. 따라서 투자자들은 거시 지표의 흐름을 주시하면서 기술주 중심의 선별적인 접근이 요구되는 시점입니다. 📌 주목 섹터: 반도체(AI), 전기차/우주항공, 금융/외환 — 젠슨 황 복귀에 따른 AI 칩 수요 재부각, 테슬라 잠재적 합병 이슈에 따른 모멘텀, 그리고 달러 강세에 따른 환율 및 금리 민감도 대응 필요</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNcXRzYUdqSUNSRmNoU0x3Z1hxR1oxMFNnN21sTE1qc0dmRXhERWgwMlQ5c0NCQ20yejNaaE9XVFpDbTV5c1Awd0k3akdwUThrR2wtQzFtV0Q3Z0xiVElQeEQ4YnJaSmVIOFpwamd2ZTBBV0lTc3ZOX3hYVXllMDNPY3dYYXpGQQ?oc=5" target="_blank" rel="noopener">
+          <div class="article-title">Shafaq News..Gold rebounds from 14-month low on bargain buying - شفق نيوز</div>
+          <div class="article-meta">
+            <span>Google News (Federal Reserve interest rates)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/11/24/nvidia-jensen-huang-governance.html" target="_blank" rel="noopener">
+          <div class="article-title">Jensen Huang is ‘too big to fire,’ putting Nvidia’s governance in focus: analysts</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/malaysia-pm-says-china-easier-to-deal-with-than-us-amid-tech-tensions-scmp-93CH-5047138" target="_blank" rel="noopener">
+          <div class="article-title">Malaysia PM says China easier to deal with than U.S. amid tech tensions- SCMP</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/economic-indicators/finlands-industrial-producer-prices-rise-94-in-october-93CH-5047137" target="_blank" rel="noopener">
+          <div class="article-title">Finland’s industrial producer prices rise 9.4% in October</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/markets/stocks/articles/spacex-tesla-directors-negotiate-potential-062339987.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">SpaceX, Tesla directors negotiate potential $3.5 trillion merger, FT reports</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (TSLA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/economic-indicators/finlands-employment-drops-by-51000-in-october-93CH-5047136" target="_blank" rel="noopener">
+          <div class="article-title">Finland’s employment drops by 51,000 in October</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950" target="_blank" rel="noopener">
+          <div class="article-title">Dollar holds near 20-mth high amid AI rally, Fed tightening bets</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/11/24/prediction-1-magnificent-seven-stock-that-will-lag-the-market-in-2027/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Prediction: 1 "Magnificent Seven" Stock That Will Lag the Market in 2027</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (TSLA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/analysishuangs-stunning-nvidia-return-sparks-relief-for-battered-ai-trade-5046322" target="_blank" rel="noopener">
+          <div class="article-title">Analysis-Huang’s stunning Nvidia return sparks relief for battered AI trade</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-24</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/europes-earnings-boom-challengeswall-street-but-may-prove-fleeting-5047123" target="_blank" rel="noopener">
+          <div class="article-title">Europe’s earnings boom challenges Wall Street, but may prove fleeting</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-24</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
