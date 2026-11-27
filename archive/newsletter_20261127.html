@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 11월 27일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 11월 27일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>추수감사절 연휴로 단축된 변동성 장세 속에서 미국 주가지수 선물은 소폭 상승하며 마감 국면에 진입했습니다. → 증시 하방 경직성을 확보하며 완만한 회복세를 보일 것으로 예상됩니다.</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>WTI 유가가 2.5% 급등하며 11월 첫 주간 상승세를 기록했고, 금 가격도 1.8% 반등했습니다. → 원자재 시장의 변동성 확대가 인플레이션 압력 및 섹터별 비용 구조에 영향을 미칠 것입니다.</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>엔비디아(NVDA)의 적정 가치 산정이 하향 조정되고 규제 및 칩 선적 관련 불확실성이 제기되었습니다. → AI 밸류에이션 리셋 과정에서 관련 대형 테크주의 단기 변동성이 커질 수 있습니다.</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>일본의 제라(Jera)가 앤스로픽, 메타, 아마존과 데이터센터 관련 논의를 진행 중인 것으로 전해졌습니다. → 글로벌 AI 인프라 및 전력·데이터센터 생태계의 확장세가 지속될 것으로 보입니다.</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>이번 주 미국 증시는 추수감사절 연휴와 맞물려 높은 변동성을 소화하며 한 주를 마무리하고 있습니다. 거시경제 측면에서는 유가 반등과 인플레이션 경계감이 상존하는 한편, 아시아 증시의 기술주 반등과 미·중 무역 우려 완화가 위험 자산 선호 심리를 일부 지지하는 모습입니다. 특히 AI 붐에 대한 과열 경고와 함께 엔비디아(NVDA) 등 핵심 반도체 종목에 대한 규제 및 밸류에이션 재평가가 동시에 진행되면서, 시장은 단순한 기대감에서 실적과 인프라 효율성 검증 단계로 이동하고 있습니다. 향후 투자자들은 거시 지표의 방향성과 함께 빅테크 기업들의 AI 인프라 투자 지속 가능성을 면밀히 모니터링할 필요가 있습니다. 📌 주목 섹터: [반도체], [AI 인프라·데이터센터], [원자재·에너지] — 규제 및 밸류에이션 재평가를 거치는 반도체와 실적 기반의 AI 인프라 수요, 그리고 인플레이션 압력에 따른 에너지 시장의 수급 변화를 동시에 주시해야 합니다.</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://www.investing.com/news/commodities-news/oil-heads-for-first-weekly-gain-in-november-as-gulf-attacks-threaten-supply-recove-5052813" target="_blank" rel="noopener">
+          <div class="article-title">Oil set for first weekly gain in November as WTI jumps 2.5%, Brent steadies</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-27</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/11/26/stock-market-today-live-updates.html" target="_blank" rel="noopener">
+          <div class="article-title">Stock futures tick higher as Wall Street gets set to wrap up a volatile holiday week: Live updates</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-27</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/commodities-news/gold-steadies-near-15month-low-as-fed-hike-bets-offset-techled-rally-5052805" target="_blank" rel="noopener">
+          <div class="article-title">Gold rebounds 1.8% after more than one-year low as bargain hunters return</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-27</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/why-is-the-australian-dollar-climbing-today-93CH-5052853" target="_blank" rel="noopener">
+          <div class="article-title">Why is the Australian Dollar climbing today?</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-27</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/stock-market-news/japans-jera-in-talks-with-anthropic-meta-amazon-on-data-centers-nikkei-93CH-5052852" target="_blank" rel="noopener">
+          <div class="article-title">Japan’s Jera in talks with Anthropic, Meta, Amazon on data centers- Nikkei</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-27</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/m/158e82fc-b889-34b6-8704-99a49e9a83ae/dow-jones-futures-rise%3B-look.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Dow Jones Futures Rise; Look For This Bullish Market Signal On Black Friday</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-27</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/earnings/aclarion-earnings-beat-by-011-revenue-fell-short-of-estimates-5052851" target="_blank" rel="noopener">
+          <div class="article-title">Aclarion earnings beat by $0.11, revenue fell short of estimates</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-27</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-stock-fair-value-042301514.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Nvidia (NVDA) Stock Fair Value Falls After Analysts Reassess Leadership And Regulatory Risks</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-27</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.cnbc.com/2026/11/27/spacex-shares-musk-donations.html" target="_blank" rel="noopener">
+          <div class="article-title">SpaceX shares jump on alternative trading platform after Musk says he will expand share donations</div>
+          <div class="article-meta">
+            <span>CNBC Top News</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-27</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://finance.yahoo.com/markets/world-indices/articles/asian-stocks-rise-tech-rebound-041727436.html?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Asian stocks rise as tech rebound, easing U.S. trade concerns lift sentiment</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-27</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
