@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026년 11월 28일 미국 주식 뉴스레터</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans KR', sans-serif;
+      background-color: #f0f4f8;
+      color: #1a202c;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* ── Outer Wrapper ── */
+    .email-wrapper {
+      width: 100%;
+      padding: 24px 16px;
+      background-color: #f0f4f8;
+    }
+
+    /* ── Card Container ── */
+    .card {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* ── Header ── */
+    .header {
+      background: linear-gradient(135deg, #0f2044 0%, #1a56a4 60%, #2d7dd2 100%);
+      padding: 40px 48px 36px;
+      color: #ffffff;
+    }
+    .header-flag { font-size: 28px; margin-bottom: 8px; }
+    .header h1 {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      line-height: 1.3;
+    }
+    .header-meta {
+      margin-top: 10px;
+      font-size: 13px;
+      opacity: 0.75;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .badge {
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 2px 10px;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+
+    /* ── Section Common ── */
+    .section {
+      padding: 32px 48px;
+      border-bottom: 1px solid #e8ecf2;
+    }
+    .section:last-child { border-bottom: none; }
+    .section-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #6b7a99;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ── Summary List ── */
+    .summary-list { list-style: none; }
+    .summary-list li {
+      padding: 12px 0;
+      border-bottom: 1px solid #f0f4f8;
+      font-size: 14.5px;
+      line-height: 1.65;
+      color: #2d3748;
+      display: flex;
+      gap: 10px;
+    }
+    .summary-list li:last-child { border-bottom: none; }
+    .summary-dot {
+      flex-shrink: 0;
+      width: 8px;
+      height: 8px;
+      background: #3b82f6;
+      border-radius: 50%;
+      margin-top: 8px;
+    }
+
+    /* ── Insight Box ── */
+    .insight-box {
+      background: linear-gradient(135deg, #eff6ff 0%, #f0f9ff 100%);
+      border: 1px solid #bfdbfe;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0 12px 12px 0;
+      padding: 20px 24px;
+    }
+    .insight-box p {
+      font-size: 15px;
+      line-height: 1.85;
+      color: #1e3a5f;
+    }
+
+    /* ── Article Cards ── */
+    .article-card {
+      display: block;
+      text-decoration: none;
+      padding: 14px 0;
+      border-bottom: 1px solid #f0f4f8;
+      transition: background 0.15s;
+    }
+    .article-card:last-child { border-bottom: none; }
+    .article-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1d4ed8;
+      line-height: 1.45;
+      margin-bottom: 5px;
+    }
+    .article-meta {
+      font-size: 12px;
+      color: #94a3b8;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .article-source-dot {
+      width: 4px; height: 4px;
+      background: #cbd5e1;
+      border-radius: 50%;
+      display: inline-block;
+    }
+
+    /* ── Comment Box ── */
+    .comment-box {
+      background: #fafafa;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 18px 22px;
+      font-size: 14px;
+      line-height: 1.75;
+      color: #4a5568;
+    }
+    .comment-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+
+    /* ── Footer ── */
+    .footer {
+      background: #1e293b;
+      padding: 28px 48px;
+      text-align: center;
+    }
+    .footer p {
+      font-size: 12px;
+      color: #64748b;
+      line-height: 1.7;
+    }
+    .footer a { color: #94a3b8; }
+    .disclaimer {
+      margin-top: 10px;
+      font-size: 11px;
+      color: #475569;
+      padding-top: 10px;
+      border-top: 1px solid #334155;
+    }
+
+    /* ── Mobile ── */
+    @media (max-width: 620px) {
+      .header { padding: 28px 24px 24px; }
+      .header h1 { font-size: 20px; }
+      .section { padding: 24px; }
+      .footer { padding: 20px 24px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="email-wrapper">
+    <div class="card">
+
+      <!-- ── HEADER ── -->
+      <div class="header">
+        <div class="header-flag">🇺🇸</div>
+        <h1>미국 주식 뉴스레터</h1>
+        <div class="header-meta">
+          <span>2026년 11월 28일</span>
+          <span class="badge">AI Powered</span>
+        </div>
+      </div>
+
+      <!-- ── SUMMARY ── -->
+      <div class="section">
+        <div class="section-title">📋 오늘의 주요 뉴스</div>
+        <ul class="summary-list">
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>씨티그룹(Citigroup), 350억 달러 규모의 회계 오류 발생으로 임원진 개편 단행 → 해당 은행주의 단기 변동성 확대 및 내부 통제 리스크 부각</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>팔란티어(PLTR), 폴란드 국방부와 Maven Smart System 방산 소프트웨어 공급 계약 체결 → 지정학적 긴장 속 방산 섹터의 꾸준한 실적 모멘텀 강화</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>엔비디아(NVDA) 및 주요 빅테크·반도체 주가 급등락 지속 및 마이클 베리의 숏 포지션 유지 → AI 및 반도체 밸류에이션에 대한 시장 내 경계감 지속</span>
+          </li>
+          
+          <li>
+            <span class="summary-dot"></span>
+            <span>버니(Bernstein), 최근 시스템 장애가 2027년 인프라 소프트웨어(MSFT 등) 소비 기반 기업에 부담을 줄 수 있다고 경고 → 소프트웨어 섹터 내 차별화 장세 예상</span>
+          </li>
+          
+        </ul>
+      </div>
+
+      <!-- ── INSIGHT ── -->
+      <div class="section">
+        <div class="section-title">💡 오늘의 투자 인사이트</div>
+        <div class="insight-box">
+          <p>글로벌 시장은 위험 선호 심리가 개선되면서 미 달러화 대비 주요국 통화가 강세를 보이는 등 매크로 환경에서 완만한 안정세를 찾아가고 있습니다. 개별 종목 관점에서는 내부자 매도세가 이어지는 동시에, 팔란티어(PLTR)의 폴란드 방산 계약 체결처럼 확실한 실적 가시성을 가진 기업들은 견조한 흐름을 보이는 양극화 장세가 연출되고 있습니다. 특히 AI 인프라의 핵심인 엔비디아(NVDA)는 높은 변동성을 겪고 있으나 대형 메모리 및 반도체 밸류에이션에 대한 저가 매력 분석도 공존하고 있어, 기술주 전반에 걸친 세밀한 종목 선별이 요구됩니다. 📌 주목 섹터: [방산], [반도체], [소프트웨어] — 지정학적 수혜와 실적 가시성이 높은 방산 및 저가 매력이 부각되는 반도체, 그리고 인프라 소비 트렌드가 갈리는 소프트웨어 섹터 간의 차별화 대응 필요</p>
+        </div>
+      </div>
+
+      <!-- ── ARTICLES ── -->
+      <div class="section">
+        <div class="section-title">🔗 주요 기사 모음</div>
+        
+        <a class="article-card" href="https://www.fool.com/investing/2026/11/27/spacex-stock-is-trading-below-its-usd135-ipo-price-history-says-what-other-giant-ipos-did-from-there/?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">SpaceX Stock Is Trading Below Its $135 IPO Price. History Says What Other Giant IPOs Did From There.</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/company-news/citigroup-faces-executive-shakeup-after-35-billion-bookkeeping-error--wsj-5054160" target="_blank" rel="noopener">
+          <div class="article-title">Citigroup faces executive shake-up after $35 billion bookkeeping error - WSJ</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/shoulder-innovations-coo-sells-15400-in-common-stock-93CH-5054156" target="_blank" rel="noopener">
+          <div class="article-title">Shoulder Innovations COO sells $15,400 in common stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/japan-post-sells-161-million-in-aflac-stock-93CH-5054155" target="_blank" rel="noopener">
+          <div class="article-title">Japan Post sells $1.61 million in Aflac stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/plug-power-cfo-sells-66476-in-company-stock-93CH-5054154" target="_blank" rel="noopener">
+          <div class="article-title">Plug Power CFO sells $66,476 in company stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.thestreet.com/investing/michael-burry-palantir-metlife-puts?.tsrc=rss" target="_blank" rel="noopener">
+          <div class="article-title">Michael Burry still sees 2 stocks worth betting against</div>
+          <div class="article-meta">
+            <span>Yahoo Finance (NVDA)</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/doordash-general-counsel-sells-370160-in-company-stock-93CH-5054145" target="_blank" rel="noopener">
+          <div class="article-title">Doordash general counsel sells $370,160 in company stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/doordash-chief-accounting-officer-sells-390982-in-stock-93CH-5054143" target="_blank" rel="noopener">
+          <div class="article-title">DoorDash chief accounting officer sells $390,982 in stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/doordash-president-sells-263-million-in-company-stock-93CH-5054138" target="_blank" rel="noopener">
+          <div class="article-title">DoorDash president sells $2.63 million in company stock</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-28</span>
+            
+          </div>
+        </a>
+        
+        <a class="article-card" href="https://www.investing.com/news/insider-trading-news/turtle-creek-sells-361612-in-jeldwen-holding-shares-93CH-5054137" target="_blank" rel="noopener">
+          <div class="article-title">Turtle Creek sells $361,612 in JELD-WEN Holding shares</div>
+          <div class="article-meta">
+            <span>Investing.com</span>
+            
+            <span class="article-source-dot"></span>
+            <span>2026-11-28</span>
+            
+          </div>
+        </a>
+        
+      </div>
+
+      <!-- ── EDITOR COMMENT (조건부) ── -->
+      
+
+      <!-- ── FOOTER ── -->
+      <div class="footer">
+        <p>이 뉴스레터는 Gemini AI가 자동 생성하고 <strong style="color:#94a3b8">형</strong>이 최종 검토했습니다.</p>
+        <p class="disclaimer">
+          본 뉴스레터는 투자 권유가 아닌 정보 제공 목적으로 작성되었습니다.<br>
+          투자에 대한 최종 판단과 책임은 본인에게 있습니다.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
